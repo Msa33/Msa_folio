@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <!--Le header-->
+    <div class="header">    
+        <nav>
+            <h2 class="Portfolio">Mon Portfolio</h2>
+             <button class="menu">☰</button>
+        </nav>
+    </div>
+    <!--Section Profil-->
+    <section class="profil">
+            <div class="gauche">
+                <h1>Hi, I'm Moussa Ahmat Hamour</h1>
+                <h2>I'm a Web Developper</h2>
+                <button type="button" href="#Work">View My Work</button>
+            </div>
+            <div class="droit">
+                <img src="image/38-removebg.png" alt="Photo de Moussa Ahmat Hamour">
+            </div>
+    </section>
+    <!--section About Me-->
+    <section class="about">
+        <div>
+            <h1>About Me</h1>
+            <p>Désireux de développer constamment mes
+                compétences afin d’assurer mon évolution
+                professionnelle, je suis confiant en ma capacité à
+                proposer des idées intéressantes pour des
+                campagnes inoubliables.</p>
+        </div>
+    </section>
+    <!-- Section My Work et Projet 1 2 3-->
+     <section id="Work" class="work">
+            <h1>My Work</h1>
+                <div class="conteneur_projet">
+                    <div class="projet">
+                        <img src="image/full-stack-web-developers.png" alt="">
+                    </div>
+                    <p>Web Developper</p>
+                </div>
+                <div class="conteneur_projet">
+                    <div class="projet">
+                        <img src="image/e-commerce.webp" alt="">
+                    </div>
+                    <p>E-Commerce</p>
+                </div>
+                <div class="conteneur_projet">
+                    <div class="projet">
+                        <img src="image/poule.webp" alt="">
+                    </div>
+                    <p>Ferme avicole</p>
+                </div>    
+                <div class="conteneur_projet">
+                    <div class="projet">
+                        <img src="image/Telemaintenance.jpg " alt="">
+                    </div>
+                    <p>Call center</p>
+                </div>                             
+    </section>
+    <!--Section Contact-->
+    <section class="contact-container">
+            <h1>Contact</h1>
+            <form id="formulaire">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+    
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+    
+                <div class="input-group">
+                    <textarea id="message" placeholder="Message" rows="4" required></textarea>
+                    <small class="error-message"></small>
+                </div>
+    
+                <button class="send" type="submit">Send</button>
+            </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

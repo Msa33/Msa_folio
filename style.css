@@ -1,0 +1,229 @@
+:root{
+    --Couleur_1: rgb(250, 250, 250);
+    --Couleur_2: #fff;
+    --Couleur_3: rgb(7, 164, 192);
+}
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 10px 15px;
+    box-shadow:3px 3px 3px 3px #ccc;
+    
+}
+/* Le header */
+nav{
+    display: flex;
+    height: 10%;
+    background-color: rgb(9, 14, 82);
+    top: 0%;
+    bottom: 90%;
+    width: 100%;
+    color: var(--Couleur_2);
+}
+.menu{
+    margin: 7px auto;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    border: none;
+    background: none;
+    color: var(--Couleur_2);
+}
+.Portfolio{
+    margin: 7px auto;
+    font-size: 35px;
+}
+/*Section Profil*/
+.profil{
+    background-color: var(--Couleur_1);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.profil .droit{
+    margin: 2% 10%;
+    
+}
+.droit img{
+    width: 400px;
+    height: 400px;
+    margin-right: 2%;
+    border-radius: 180px;
+}
+
+.profil .gauche{
+    margin: 5% 15%;
+}
+.profil .gauche h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.profil .gauche h2{
+    color: var(--Couleur_3);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.profil .gauche button {
+    margin-top: 15px;
+    background-color: var(--Couleur_3);
+    border: none;
+    border-radius: 5px;
+    color: var(--Couleur_2);
+    height: 35px;
+    width: 105px;
+    font-weight: bold;
+}
+
+/*section About*/
+.about{
+    width: 100%;
+    margin: 20px 40px;
+}
+.about p{
+    margin: auto;
+}
+/*section Work*/
+.work{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 40px;
+    
+}
+
+.conteneur_projet{
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    margin: 25px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.projet{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Couleur_1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 70px;
+}
+.projet img{
+    width: 100%;
+    height: 100%;
+}
+.conteneur_projet p{
+    color: var(--Couleur_3);
+    font-weight: bold;
+    margin-left: 70px;
+}
+/*Contact*/
+/* Container for the contact form */
+.contact-container {
+    max-width: 90%;
+    margin: 15px 15px;
+    padding-left: 30px;
+    background: var(--Couleur_2);
+    border-radius: 10px;
+    
+}
+
+/* Form headings */
+.contact-container h1 {
+    margin-bottom: 10px;
+}
+
+/* Input field styles */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--Couleur_1);
+}
+
+/* message d'erreur*/
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Style de bouton */
+.send {
+    width: 15%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    float: right;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/*Message de  Succés */
+.hidden {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/*Media querie style*/
+@media (max-width: 800px) {
+    /*Ordre général*/
+    nav, .profil, .about, .work {
+        margin: 8px;
+        text-align: center;
+    }
+    .profil, .work{
+        display: grid;
+    }
+    /*header*/
+    nav{
+        display: flexbox;
+    }
+    /*Profil*/
+    .gauche h1{
+        font-size: 40px;
+    }
+    .gauche h2{
+        font-size: 25px;
+    }
+    .droit img{
+        width: 300px;
+        height: 300px;
+        border-radius: 120px;
+    }
+    /*About me*/
+      
+    /*My  work*/
+    .conteneur_projet{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .projet{
+        margin: auto;
+    }
+}
