@@ -1,5 +1,4 @@
 # Msa_folio
-
 # Présentation du site
     Un Portfolio est comme un CV en ligne pour developpeur
     L'entête contient les differentes menu en suite dans le corps du site on la photo et le nom du developpeur
@@ -12,6 +11,7 @@ en suite j'ai choisi les balise qu'il faut pour chaque élément qui sur la maqu
 
 # Capture de porfolio
 
-![Interface porfolio](Captre folio 1)
-![Interface porfolio](Captre folio 2)
+![Capture 1 du portfolio](<image/Capture folio 1.png>)
+![Capture 2 de porfolio](<image/Capture folio 2.png>)
+
 
